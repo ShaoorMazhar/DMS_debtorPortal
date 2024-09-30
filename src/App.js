@@ -1,7 +1,13 @@
-import "./App.css";
+import { Route, Routes } from "react-router-dom";
+
+import HomePage from "./pages/homePage";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <Routes>
+      <Route path="/home" element={<HomePage />} />
+    </Routes>
+  );
 }
 
 export default App;
